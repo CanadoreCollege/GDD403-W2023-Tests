@@ -8,18 +8,22 @@ public class SortingUIController : MonoBehaviour
     public SortingAndSearchingScene sceneController;
     public Transform cardParent;
     public GameObject startButton;
+    public GameObject resetButton;
 
     // Start is called before the first frame update
     void Start()
     {
         cardParent = GameObject.Find("[CARDS]").transform;
         sceneController = GetComponent<SortingAndSearchingScene>();
+        startButton.SetActive(false);
+        resetButton.SetActive(false);
+        Invoke("ShowButtons", 3.0f);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ShowButtons()
     {
-
+        startButton.SetActive(true);
+        resetButton.SetActive(true);
     }
 
     public void OnStartButton_Pressed()

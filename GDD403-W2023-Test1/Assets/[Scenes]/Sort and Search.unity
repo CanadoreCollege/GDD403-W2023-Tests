@@ -1514,6 +1514,7 @@ MonoBehaviour:
   sceneController: {fileID: 0}
   cardParent: {fileID: 0}
   startButton: {fileID: 203770753}
+  resetButton: {fileID: 1250275311}
 --- !u!1 &1250275311
 GameObject:
   m_ObjectHideFlags: 0
